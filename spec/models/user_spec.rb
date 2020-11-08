@@ -24,8 +24,8 @@ RSpec.describe User, type: :model do
       expect(@user).to be_valid 
     end
 
-    it "must have a type: manager" do
-      expect(@user).to eq('manager') 
+    it "must have a default type: manager" do
+      expect(@user.user_type).to eq('manager') 
     end
   end
 end
