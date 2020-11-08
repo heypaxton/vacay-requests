@@ -47,7 +47,7 @@ RSpec.configure do |config|
   config.before(:each) { DatabaseCleaner.strategy = :transaction }
   config.before(:each, :js => true) { DatabaseCleaner.strategy = :truncation }
   config.before(:each) { DatabaseCleaner.start }
-  config.after(:each) { DatabaseCleaner.clean 
+  config.after(:each) { DatabaseCleaner.clean }
 
   # You can uncomment this line to turn off ActiveRecord support entirely.
   # config.use_active_record = false
